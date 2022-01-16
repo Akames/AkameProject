@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.akame.akameproject.custom.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/tv_test"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="点击换肤"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="恢复默认"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+    </com.akame.akameproject.custom.FlowLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
