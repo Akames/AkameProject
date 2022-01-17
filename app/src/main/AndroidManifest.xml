@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AkameProject">
         <activity
+            android:name=".nested.NestedActivity"
+            android:exported="false" />
+        <activity
             android:name=".annotation.AnnotationActivity"
             android:exported="true" />
         <activity

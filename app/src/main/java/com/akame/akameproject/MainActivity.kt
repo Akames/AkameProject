@@ -15,6 +15,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatTextView
 import com.akame.akameproject.annotation.AnnotationActivity
+import com.akame.akameproject.nested.NestedActivity
 import com.akame.skinlib.SkinManger
 import java.io.File
 
@@ -28,16 +29,20 @@ class MainActivity : Activity() {
 
 
         val testView = findViewById<TextView>(R.id.tv_test)
-        testView.setOnClickListener {
-//            val fileName = "file:///android_asset/skinapp.apk
-            val fileName = "${externalCacheDir?.path}/skinapp.apk"
-            Log.e("tag", "${File(fileName).exists()}")
-            SkinManger.loadSkin(this.application, "${externalCacheDir?.path}/skinapp.apk")
-        }
+//        testView.setOnClickListener {
+////            val fileName = "file:///android_asset/skinapp.apk
+//            val fileName = "${externalCacheDir?.path}/skinapp.apk"
+//            Log.e("tag", "${File(fileName).exists()}")
+//            SkinManger.loadSkin(this.application, "${externalCacheDir?.path}/skinapp.apk")
+//        }
+//
+//        val tvDefault = findViewById<TextView>(R.id.tv_default)
+//        tvDefault.setOnClickListener {
+//            SkinManger.loadSkin(this.application, "")
+//        }
 
-        val tvDefault = findViewById<TextView>(R.id.tv_default)
-        tvDefault.setOnClickListener {
-            SkinManger.loadSkin(this.application, "")
+        testView.setOnClickListener {
+            startActivity(Intent(this, NestedActivity::class.java))
         }
     }
 
