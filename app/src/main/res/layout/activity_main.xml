@@ -19,7 +19,6 @@
             android:background="@color/red"
             android:gravity="center"
             android:text="点击换肤"
-            android:textColor="@color/white"
             android:textSize="16sp" />
 
         <TextView
@@ -34,14 +33,13 @@
 
 
         <TextView
-            android:layout_width="500dp"
+            android:id="@+id/tv_mytext"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@color/white"
+            android:background="@color/red"
             android:gravity="center"
-            android:text="@string/app_name"
             android:textColor="@color/green"
             android:textSize="16sp" />
-
 
         <TextView
             android:id="@+id/tv_change"

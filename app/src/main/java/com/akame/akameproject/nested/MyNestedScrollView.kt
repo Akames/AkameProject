@@ -1,4 +1,4 @@
-package com.example.myapplication.neste
+package com.akame.akameproject.nested
 
 import android.content.Context
 import android.util.AttributeSet
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.core.widget.NestedScrollView
 import androidx.core.widget.NestedScrollView.OnScrollChangeListener
 import androidx.recyclerview.widget.RecyclerView
-import com.akame.akameproject.nested.FlingHelper
 
 class MyNestedScrollView(context: Context, attributeSet: AttributeSet) :
     NestedScrollView(context, attributeSet) {
