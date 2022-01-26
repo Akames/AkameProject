@@ -15,6 +15,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatTextView
 import com.akame.akameproject.annotation.AnnotationActivity
+import com.akame.akameproject.fish.FishActivity
 import com.akame.akameproject.nested.NestedActivity
 import com.akame.akameproject.text.MyTextView
 import com.akame.akameproject.text.TextViewActivity
@@ -49,7 +50,7 @@ class MainActivity : Activity() {
 
         val myTextView = findViewById<TextView>(R.id.tv_mytext)
         myTextView.setOnClickListener {
-            startActivity(Intent(this, TextViewActivity::class.java))
+            startActivity(Intent(this, FishActivity::class.java))
         }
     }
 

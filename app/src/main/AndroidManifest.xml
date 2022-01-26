@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AkameProject">
         <activity
+            android:name=".fish.FishActivity"
+            android:exported="false" />
+        <activity
             android:name=".text.TextViewActivity"
             android:exported="false" />
         <activity
