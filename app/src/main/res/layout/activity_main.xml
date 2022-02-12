@@ -28,7 +28,7 @@
             android:background="@color/green"
             android:gravity="center"
             android:text="恢复默认"
-            android:textColor="@color/red"
+            android:textColor="#3E2723"
             android:textSize="16sp" />
 
 
