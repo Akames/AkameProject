@@ -10,3 +10,4 @@ rootProject.name = "AkameProject"
 include ':app'
 include ':skinlib'
 include ':skinapplication'
+include ':proguardFiles'

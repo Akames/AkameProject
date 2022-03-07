@@ -19,6 +19,8 @@ import com.akame.akameproject.fish.FishActivity
 import com.akame.akameproject.nested.NestedActivity
 import com.akame.akameproject.text.MyTextView
 import com.akame.akameproject.text.TextViewActivity
+import com.akame.proguardfiles.MyTest
+import com.akame.proguardfiles.test.TestB
 import com.akame.skinlib.SkinManger
 import java.io.File
 
@@ -52,6 +54,9 @@ class MainActivity : Activity() {
         myTextView.setOnClickListener {
             startActivity(Intent(this, FishActivity::class.java))
         }
+
+        TestB.test()
+        MyTest.test()
     }
 
     override fun onBackPressed() {
