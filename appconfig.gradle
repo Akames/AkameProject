@@ -1,0 +1,14 @@
+ext {
+
+    androidConfig = [
+            "compileSdk"               : 31,
+            "applicationId"            : "com.akame.akameproject",
+            "minSdk"                   : 21,
+            "targetSdk"                : 31,
+            "versionCode"              : 1,
+            "versionName"              : "1.0.0",
+            "testInstrumentationRunner": "androidx.test.runner.AndroidJUnitRunner"
+    ]
+
+
+}

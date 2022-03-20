@@ -1,29 +1,15 @@
 package com.akame.akameproject
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
-import android.content.res.Resources
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Layout
-import android.util.AttributeSet
-import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.TextView
-import androidx.appcompat.widget.AppCompatTextView
-import com.akame.akameproject.annotation.AnnotationActivity
+import com.akame.ak_annotation.ARouter
 import com.akame.akameproject.fish.FishActivity
-import com.akame.akameproject.nested.NestedActivity
-import com.akame.akameproject.text.MyTextView
-import com.akame.akameproject.text.TextViewActivity
-import com.akame.proguardfiles.MyTest
-import com.akame.proguardfiles.test.TestB
 import com.akame.skinlib.SkinManger
-import java.io.File
+import java.lang.Exception
 
+@ARouter(path = "app/MainActivity")
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,12 +41,13 @@ class MainActivity : Activity() {
             startActivity(Intent(this, FishActivity::class.java))
         }
 
-        TestB.test()
-        MyTest.test()
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-        System.exit(0)
+        try {
+            val testLoaderClass = Class.forName("com.akame.skinapplication.AkClassLoadTest")
+            val testClassLoader = testLoaderClass.newInstance()
+            val testPrintMethod = testLoaderClass.getMethod("testPrint")
+            testPrintMethod.invoke(testClassLoader)
+        } catch (e: ClassNotFoundException) {
+            e.printStackTrace()
+        }
     }
 }

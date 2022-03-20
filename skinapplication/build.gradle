@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk androidConfig.compileSdk
 
     defaultConfig {
         applicationId "com.akame.skinapplication"
-        minSdk 21
-        targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        minSdk androidConfig.minSdk
+        targetSdk androidConfig.targetSdk
+        versionCode androidConfig.versionCode
+        versionName androidConfig.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
