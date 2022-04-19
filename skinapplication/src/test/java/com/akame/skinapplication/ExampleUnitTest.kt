@@ -1,5 +1,6 @@
 package com.akame.skinapplication
 
+import android.app.ActionBar
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -13,5 +14,10 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
+        val strArray = arrayOf("")
+        //获取数组类型
+        println(strArray.javaClass.componentType)
     }
+
+
 }

@@ -33,15 +33,12 @@ class HookActivity : AppCompatActivity() {
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 //            getDeviceId()
 //        }
-        val test = MyHookSimple()
-        test.test()
     }
 
 
     @RequiresApi(Build.VERSION_CODES.O)
     private fun getDeviceId() {
         val tm: TelephonyManager = getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
-        tm.imei
     }
 
     private fun changeTelephonyManger() {

@@ -38,10 +38,10 @@ android {
     }
 }
 
-kapt{
-    arguments{
-        arg("Akame",project.name)
-        arg("Sever","I'm APP")
+kapt {
+    arguments {
+        arg("Akame", project.name)
+        arg("Sever", "I'm APP")
     }
 }
 
@@ -68,4 +68,25 @@ dependencies {
     implementation 'com.github.tiann:epic:0.11.2'
 
     implementation 'org.javassist:javassist:3.28.0-GA'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.8.2'
 }
+
+//afterEvaluate {
+//    android.getApplicationVariants().all { variant ->
+//        String variantName = variant.name
+//        String capitalizeName = variantName.capitalize()
+//        //找到将class文件打包成dex文件的task
+//        if (capitalizeName.equals("Debug")) {
+//            Task dexTask = project.getTasks().findByName('dexBuilder' + capitalizeName)
+//            dexTask.doFist {
+//                FileCollection files = dexTask.getInputs().getFiles()
+//                for (File file : files) {
+//                    String filePath = file.absolutePath
+//                    println(filePath)
+//                }
+//            }
+//        }
+//    }
+//}
+
